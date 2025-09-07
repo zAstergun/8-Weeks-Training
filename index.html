@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de Batalha 8 Semanas | ASTER</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+        }
+        .font-oswald {
+            font-family: 'Oswald', sans-serif;
+        }
+        .workout-card {
+            background-color: #1F2937; /* bg-gray-800 */
+            border: 1px solid #374151; /* border-gray-700 */
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .workout-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+        }
+        .day-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .tag-calistenia-a { background-color: #DC2626; color: white; } /* red-600 */
+        .tag-calistenia-b { background-color: #2563EB; color: white; } /* blue-600 */
+        .tag-corrida { background-color: #16A34A; color: white; } /* green-600 */
+        .tag-rec-ativa { background-color: #F59E0B; color: white; } /* amber-500 */
+        .tag-prova { background-color: #D946EF; color: white; } /* fuchsia-500 */
+
+        .icon-container svg {
+            width: 2.5rem;
+            height: 2.5rem;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body class="text-gray-200 p-4 sm:p-6 lg:p-8">
+
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <h1 class="font-oswald text-5xl md:text-7xl font-bold tracking-wider uppercase text-white">PLANO DE BATALHA <span class="text-red-500">8 SEMANAS</span></h1>
+            <p class="text-xl md:text-2xl text-gray-400 mt-2 font-light">DO ZERO AOS 5KM | CALISTENIA + CORRIDA por ASTER</p>
+        </header>
+
+        <!-- Seção de Blocos de Treino -->
+        <section class="mb-12">
+            <h2 class="font-oswald text-4xl text-center uppercase mb-8 border-b-2 border-gray-700 pb-2">SEUS BLOCOS DE TREINO</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Card Treino A -->
+                <div class="workout-card p-6 rounded-lg">
+                    <h3 class="font-oswald text-2xl text-red-500 mb-4 uppercase">BLOCO A: PUSH</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Flexão Inclinada:</strong> 3x 8-15</li>
+                        <li><strong>Agachamento Livre:</strong> 4x 15-20</li>
+                        <li><strong>Mergulho no Banco:</strong> 3x 8-12</li>
+                        <li><strong>Elevação de Joelhos:</strong> 3x 12-15</li>
+                        <li><strong>Prancha:</strong> 3x 30-45 seg</li>
+                    </ul>
+                </div>
+
+                <!-- Card Treino B -->
+                <div class="workout-card p-6 rounded-lg">
+                    <h3 class="font-oswald text-2xl text-blue-500 mb-4 uppercase">BLOCO B: PULL</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong>Remada Invertida:</strong> 3x 6-10</li>
+                        <li><strong>Afundo (Lunge):</strong> 3x 10-12 (cada)</li>
+                        <li><strong>Retração Escapular:</strong> 3x 8-12</li>
+                        <li><strong>Ponte de Glúteos:</strong> 3x 15-20</li>
+                        <li><strong>Abdominal "Dead Bug":</strong> 3x 10-12 (cada)</li>
+                    </ul>
+                </div>
+
+                <!-- Card Recuperação Ativa -->
+                <div class="workout-card p-6 rounded-lg">
+                    <h3 class="font-oswald text-2xl text-amber-500 mb-4 uppercase">REC. ATIVA</h3>
+                     <ul class="space-y-2 text-gray-300">
+                        <li><strong>Opção 1:</strong> 20-30 min Mobilidade</li>
+                        <li><strong>Opção 2:</strong> 15-20 min Prática de Habilidade</li>
+                        <li><strong>Opção 3:</strong> 20-30 min Cardio Leve (CA)</li>
+                        <li class="pt-2 italic text-gray-400">Escolha 1 por dia</li>
+                    </ul>
+                </div>
+
+                <!-- Card Legenda Corrida -->
+                <div class="workout-card p-6 rounded-lg">
+                    <h3 class="font-oswald text-2xl text-green-500 mb-4 uppercase">LEGENDA CORRIDA</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><span class="font-bold">CA:</span> Caminhada (50-65% FCM)</li>
+                        <li><span class="font-bold">LE:</span> Corrida Leve (65-75% FCM)</li>
+                        <li><span class="font-bold">MO:</span> Moderada (75-85% FCM)</li>
+                        <li><span class="font-bold">FO:</span> Forte (85-90% FCM)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cronograma Semanal -->
+        <section>
+            <h2 class="font-oswald text-4xl text-center uppercase mb-8 border-b-2 border-gray-700 pb-2">CRONOGRAMA DE 8 SEMANAS</h2>
+            <div class="space-y-8">
+                <!-- Loop de Semanas (exemplo para Semana 1 e 8, o resto segue o padrão) -->
+                <div class="grid grid-cols-1 gap-4">
+                    <!-- Semana 1 -->
+                    <div class="workout-card rounded-lg p-4">
+                        <h3 class="font-oswald text-2xl mb-4">SEMANA 1</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-3 text-center">
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SEG</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">3x (12'CA+3'LE)</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>TER</strong><p><span class="day-tag tag-calistenia-a">Treino A</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>QUA</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">2x (18'CA+2'LE)</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>QUI</strong><p><span class="day-tag tag-calistenia-b">Treino B</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SEX</strong><p><span class="day-tag tag-rec-ativa">Rec. Ativa</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SÁB</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">50' CA</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>DOM</strong><p><span class="day-tag tag-rec-ativa">Rec. Ativa</span></p></div>
+                        </div>
+                    </div>
+                     <!-- Semana 2 -->
+                    <div class="workout-card rounded-lg p-4">
+                        <h3 class="font-oswald text-2xl mb-4">SEMANA 2</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-3 text-center">
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SEG</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">3x (10'CA+5'LE)</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>TER</strong><p><span class="day-tag tag-calistenia-a">Treino A</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>QUA</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">3x (10'CA+5'LE)</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>QUI</strong><p><span class="day-tag tag-calistenia-b">Treino B</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SEX</strong><p><span class="day-tag tag-rec-ativa">Rec. Ativa</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SÁB</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">50' CA</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>DOM</strong><p><span class="day-tag tag-rec-ativa">Rec. Ativa</span></p></div>
+                        </div>
+                    </div>
+                     <!-- Semana 3 -->
+                    <div class="workout-card rounded-lg p-4">
+                        <h3 class="font-oswald text-2xl mb-4">SEMANA 3</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-3 text-center">
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SEG</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">2x (13'CA+5'LE)</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>TER</strong><p><span class="day-tag tag-calistenia-a">Treino A</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>QUA</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">3x (5'LE+2'MO)</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>QUI</strong><p><span class="day-tag tag-calistenia-b">Treino B</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SEX</strong><p><span class="day-tag tag-rec-ativa">Rec. Ativa</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SÁB</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">10'CA + 5'LE</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>DOM</strong><p><span class="day-tag tag-rec-ativa">Rec. Ativa</span></p></div>
+                        </div>
+                    </div>
+                     <!-- Semana 4 -->
+                    <div class="workout-card rounded-lg p-4">
+                        <h3 class="font-oswald text-2xl mb-4">SEMANA 4</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-3 text-center">
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SEG</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">6x (3'LE+2'CA)</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>TER</strong><p><span class="day-tag tag-calistenia-a">Treino A</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>QUA</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">3x (5'CA+5'LE)</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>QUI</strong><p><span class="day-tag tag-calistenia-b">Treino B</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SEX</strong><p><span class="day-tag tag-rec-ativa">Rec. Ativa</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SÁB</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">2x (10'CA+10'LE)</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>DOM</strong><p><span class="day-tag tag-rec-ativa">Rec. Ativa</span></p></div>
+                        </div>
+                    </div>
+                     <!-- Semana 5 -->
+                    <div class="workout-card rounded-lg p-4">
+                        <h3 class="font-oswald text-2xl mb-4">SEMANA 5</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-3 text-center">
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SEG</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">6x (3'LE+2'CA)</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>TER</strong><p><span class="day-tag tag-calistenia-a">Treino A</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>QUA</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">5x (4'LE+3'CA)</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>QUI</strong><p><span class="day-tag tag-calistenia-b">Treino B</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SEX</strong><p><span class="day-tag tag-rec-ativa">Rec. Ativa</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SÁB</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">2x (10'CA+10'LE)</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>DOM</strong><p><span class="day-tag tag-rec-ativa">Rec. Ativa</span></p></div>
+                        </div>
+                    </div>
+                     <!-- Semana 6 -->
+                    <div class="workout-card rounded-lg p-4">
+                        <h3 class="font-oswald text-2xl mb-4">SEMANA 6</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-3 text-center">
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SEG</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">3x (5'CA+5'MO+5'LE)</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>TER</strong><p><span class="day-tag tag-calistenia-a">Treino A</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>QUA</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">5x (3'CA+2'MO+1'FO)</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>QUI</strong><p><span class="day-tag tag-calistenia-b">Treino B</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SEX</strong><p><span class="day-tag tag-rec-ativa">Rec. Ativa</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SÁB</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">15' LE</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>DOM</strong><p><span class="day-tag tag-rec-ativa">Rec. Ativa</span></p></div>
+                        </div>
+                    </div>
+                     <!-- Semana 7 -->
+                    <div class="workout-card rounded-lg p-4">
+                        <h3 class="font-oswald text-2xl mb-4">SEMANA 7</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-3 text-center">
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SEG</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">1x5'LE+3x(10'LE+5'CA)</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>TER</strong><p><span class="day-tag tag-calistenia-a">Treino A</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>QUA</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">1x5'LE+5x(3'CA+2'MO+1'FO)</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>QUI</strong><p><span class="day-tag tag-calistenia-b">Treino B</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SEX</strong><p><span class="day-tag tag-rec-ativa">Rec. Ativa</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SÁB</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">25'CA + 12'LE</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>DOM</strong><p><span class="day-tag tag-rec-ativa">Rec. Ativa</span></p></div>
+                        </div>
+                    </div>
+                     <!-- Semana 8 -->
+                    <div class="workout-card rounded-lg p-4 border-2 border-fuchsia-500">
+                        <h3 class="font-oswald text-2xl mb-4">SEMANA 8 - SEMANA DA PROVA</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-7 gap-3 text-center">
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SEG</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">2x (10'CA+10'LE)</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>TER</strong><p><span class="day-tag tag-calistenia-a">Treino A</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>QUA</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">25'CA+10'LE</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>QUI</strong><p><span class="day-tag tag-rec-ativa">Rec. Ativa</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SEX</strong><p><span class="day-tag tag-corrida">Corrida</span></p><p class="text-xs mt-1">Leve: 25'CA+10'LE</p></div>
+                            <div class="p-2 bg-gray-900 rounded-md"><strong>SÁB</strong><p><span class="day-tag tag-rec-ativa">Rec. Ativa</span></p></div>
+                            <div class="p-2 bg-gray-900 rounded-md border border-fuchsia-500 animate-pulse"><strong>DOM</strong><p><span class="day-tag tag-prova">PROVA 5K</span></p><p class="text-xs mt-1">É O SEU DIA!</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
